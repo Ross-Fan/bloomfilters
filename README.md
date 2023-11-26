@@ -6,7 +6,7 @@ Usually, a bloom filter denpend on three parameters:
 >    3. ***K***, the number of hash function
 
 In the following picture, the bloom filter's capacity is 3000, the bits are 40000, the number of hash function is 4, the false positive rate is 0.4% , ref [Bloom Filter Calculator](https://hur.st/bloomfilter/?n=3000&p=&m=40000&k=4)
-![alt](10.48.36.png)
+![alt](https://github.com/Ross-Fan/bloomfilters/blob/main/10.48.36.png)
 
 In practice, the life cycle of a bloom fliter should be considered. So, when the total number of items reach the capacity (N), the replacement shall be executed. 
 ### Replacement
@@ -18,4 +18,4 @@ In the Set phase, the Set should be continued with the bloom filter that has not
 
 ### Hash Function
 murmur3-32 is chosen as the hash function. In this program, the murmur32 is provided, the perfermance tested as the following result:
-![alt](10.17.29.png)
+![alt](https://github.com/Ross-Fan/bloomfilters/blob/main/10.17.29.png)
